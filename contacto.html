@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Galeria Vanguardia - Contacto</title>
+</head>
+<body>
+<header>
+    <div class="p-5 bg-secondary text-white text-center">
+        <h1>Galería Vanguardia</h1>
+        <p>Explorando el Arte del Presente</p>
+    </div>
+    <!-- Menú -->
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galería</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="contacto.html">Contacto</a>
+        </li>
+    </ul>
+</header>
+<!-- Contenido página de contacto -->
+<h1>Contacto</h1>
+<h2>Encuentranos en:</h2>
+<p>
+    <strong class="texto-negrita">Dirección:</strong> Esperanza 7459, Santiago Centro, Region Metropolitana, Chile.<br>
+    <strong class="texto-negrita">Teléfono:</strong>  +1 555-123-4567
+</p>
+<!-- Formulario -->
+<div class="textoFormulario">
+    <h2>Formulario de contacto</h2>
+    <p>Llena el formulario si tienes alguna consulta, deseas comprar o vender obras de arte.</p>
+</div>
+
+<div class="formulario">
+    <form id="miFormulario">
+        <!-- Campos del formulario -->
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre">
+            <span class="error" id="nombreError"></span>
+            <span class="success" id="nombreSuccess"></span>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" class="form-control" id="email">
+            <span class="error" id="emailError"></span>
+            <span class="success" id="emailSuccess"></span>
+        </div>
+        <div class="form-group">
+            <label for="tipoSolicitud">Tipo Solicitud:</label>
+            <select class="form-select" id="tipoSolicitud">
+                <option selected="selected" value="">Selecciona una opción</option>
+                <option value="compra">Compra</option>
+                <option value="consulta">Consulta</option>
+                <option value="venta">Venta</option>
+            </select>
+            <span class="error" id="tipoSolicitudError"></span>
+            <span class="success" id="tipoSolicitudSuccess"></span>
+        </div>
+        <div class="form-group">
+            <label for="comentarios">Comentarios:</label>
+            <textarea class="form-control" id="comentarios" rows="4" ></textarea>
+            <span class="error" id="comentariosError"></span>
+            <span class="success" id="comentariosSuccess"></span>
+        </div>
+        <!-- Botón de envío -->
+        <div class="form-group">
+            <button type="submit" class="btn btn-dark">Enviar</button>
+        </div>
+    </form>
+</div>
+
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        Galería Vanguardia - 2024
+    </div>
+</footer>
+<script src="contacto.js"></script>
+</body>
+</html>
